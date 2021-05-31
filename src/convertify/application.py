@@ -50,4 +50,4 @@ def query(category):
 
 
 if __name__ == "__main__":
-    application.run(port=9999)
+    application.run()
