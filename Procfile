@@ -1,1 +1,1 @@
-web: gunicorn run:src.convertify.application
+web: gunicorn src.convertify.application
