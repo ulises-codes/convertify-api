@@ -3,10 +3,8 @@ from convertify.data.convert import convert, UNIT_MAP, UNIT_TYPES
 from flask_cors import CORS
 import os
 
-client_endpoint = os.environ['CLIENT_ENDPOINT']
-
 application = Flask(__name__)
-CORS(application, origin=client_endpoint, methods=["GET", "POST"])
+CORS(application, origin='*', methods=["GET", "POST"])
 
 
 @application.route("/categories")
